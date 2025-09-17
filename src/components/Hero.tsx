@@ -8,10 +8,13 @@ const Hero = () => {
         <div className="text-center">
           <div className="mb-8">
             <img
-              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
-              alt="Sri Sanjay S"
-              className="w-48 h-48 rounded-full mx-auto mb-8 shadow-2xl object-cover border-4 border-white"
-            />
+  src="/sanjay.jpg"
+  alt="Sri Sanjay S"
+  width={120}
+  height={120}
+  className="rounded-full mx-auto mb-8 shadow-2xl object-cover border-4 border-white"
+/>
+
           </div>
           
           <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-4">
