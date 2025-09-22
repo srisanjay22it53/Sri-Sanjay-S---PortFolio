@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, ExternalLink, Calendar } from 'lucide-react';
+import { Award, Calendar } from 'lucide-react';
 
 const Certifications = () => {
   const certifications = [
@@ -93,15 +93,11 @@ const Certifications = () => {
                   </div>
                 </div>
                 
-                <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                <div className="flex items-center pt-4 border-t border-gray-100">
                   <div className="flex items-center text-sm text-gray-500">
                     <Calendar className="w-4 h-4 mr-1" />
                     <span>Issued in {cert.date}</span>
                   </div>
-                  <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 text-sm">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Verify
-                  </button>
                 </div>
               </div>
             </div>

@@ -1,20 +1,17 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Phone, Download } from 'lucide-react';
+import { Github, Linkedin, Mail, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center">
           <div className="mb-8">
             <img
-  src="/sanjay.jpg"
-  alt="Sri Sanjay S"
-  width={120}
-  height={120}
-  className="rounded-full mx-auto mb-8 shadow-2xl object-cover border-4 border-white"
-/>
-
+              src="/sanjay.jpg"
+              alt="Sri Sanjay S"
+              className="w-48 h-48 rounded-full mx-auto mb-8 shadow-2xl object-cover border-4 border-white"
+            />
           </div>
           
           <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-4">
@@ -33,25 +30,16 @@ const Hero = () => {
           
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <a
-              href="tel:+917358849081"
-              className="flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg"
+              href="/resume.pdf"
+              download="resume.pdf"
+              className="flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors duration-200 shadow-lg"
+              onClick={(e) => {
+                e.currentTarget.setAttribute('href', '/resume.pdf');
+              }}
             >
-              <Phone className="w-5 h-5 mr-2" />
-              Call Me
-            </a>
-            
-            <a
-              href="mailto:sanjaysanjay58694@gmail.com"
-              className="flex items-center px-6 py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors duration-200 shadow-lg"
-            >
-              <Mail className="w-5 h-5 mr-2" />
-              Email Me
-            </a>
-            
-            <button className="flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors duration-200 shadow-lg">
               <Download className="w-5 h-5 mr-2" />
               Download CV
-            </button>
+            </a>
           </div>
           
           <div className="flex justify-center space-x-6">

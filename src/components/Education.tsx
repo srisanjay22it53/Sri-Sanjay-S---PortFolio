@@ -1,8 +1,18 @@
 import React from 'react';
-import { GraduationCap, Calendar, MapPin, Award } from 'lucide-react';
+import { GraduationCap, Calendar, Award } from 'lucide-react';
 
-const Education = () => {
-  const education = [
+interface EducationItem {
+  degree: string;
+  institution: string;
+  period: string;
+  cgpa: string;
+  status: string;
+  description: string;
+  highlights: string[];
+}
+
+const Education: React.FC = () => {
+  const education: EducationItem[] = [
     {
       degree: 'Bachelor of Technology in Information Technology',
       institution: 'KGiSL Institute of Technology, Coimbatore',
@@ -36,6 +46,18 @@ const Education = () => {
   return (
     <section id="education" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Download Resume Button */}
+        <div className="flex justify-end mb-8">
+          <a
+            href="/resume.pdf"
+            download="resume.pdf"
+            className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-blue-700 transition"
+          >
+            Download Resume
+          </a>
+        </div>
+
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Education</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -64,7 +86,7 @@ const Education = () => {
                       </div>
                       <div className="flex items-center">
                         <Award className="w-4 h-4 mr-2" />
-                        <span>CGPA/Percentage: {edu.cgpa}</span>
+                        <span>{edu.cgpa}</span>
                       </div>
                     </div>
                     <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
