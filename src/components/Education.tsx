@@ -1,5 +1,6 @@
 import React from 'react';
 import { GraduationCap, Calendar, Award } from 'lucide-react';
+import DownloadResumeButton from './DownloadResumeButton';
 
 interface EducationItem {
   degree: string;
@@ -48,15 +49,7 @@ const Education: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Download Resume Button */}
-        <div className="flex justify-end mb-8">
-          <a
-            href="/resume.pdf"
-            download="resume.pdf"
-            className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold shadow hover:bg-blue-700 transition"
-          >
-            Download Resume
-          </a>
-        </div>
+        
 
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Education</h2>

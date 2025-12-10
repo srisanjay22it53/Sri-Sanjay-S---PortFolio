@@ -1,6 +1,4 @@
-import React from 'react';
 import { Award, Calendar } from 'lucide-react';
-
 const Certifications = () => {
   const certifications = [
     {
