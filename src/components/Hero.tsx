@@ -9,46 +9,42 @@ const Hero = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center">
-
-          {/* Profile Image */}
           <div className="mb-8">
             <img
-              src="/sanjay.jpg"
-              alt="Sri Sanjay S"
-              className="
-                w-32 h-32
-                sm:w-40 sm:h-40
-                md:w-48 md:h-48
-                rounded-full
-                mx-auto
-                mb-8
-                shadow-2xl
-                object-cover
-                object-top
-                border-4
-                border-white
-              "
-            />
+  src="/sanjay.jpg"
+  alt="Sri Sanjay S"
+  className="
+    w-32 h-32
+    sm:w-40 sm:h-40
+    md:w-44 md:h-44
+    rounded-full
+    mx-auto
+    mb-8
+    shadow-2xl
+    border-4
+    border-white
+    object-cover
+    object-[50%_12%]
+  "
+/>
+
+
           </div>
 
-          {/* Name */}
           <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-4">
             Sri Sanjay S
           </h1>
 
-          {/* Title */}
           <h2 className="text-2xl sm:text-3xl font-semibold text-blue-600 mb-6">
             Full Stack Developer
           </h2>
 
-          {/* Description */}
           <p className="text-lg sm:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-8">
-            Full Stack Developer skilled in Java, MERN stack, and DevOps tools such as Git, Docker, and CI/CD.
-            Experienced in building and deploying real-world applications with a focus on scalability,
-            efficiency, and user experience.
+            Full Stack Developer skilled in Java, MERN stack, and DevOps tools such as Git, Docker,
+            and CI/CD. Experienced in building and deploying real-world applications with a focus on
+            scalability, efficiency, and user experience.
           </p>
 
-          {/* Download Button */}
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <a
               href="/resume.pdf"
@@ -63,7 +59,6 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* Social Icons */}
           <div className="flex justify-center space-x-6">
             <a
               href="https://www.linkedin.com/in/sri-sanjay-s-64b546247/"
@@ -90,7 +85,6 @@ const Hero = () => {
               <Mail className="w-6 h-6 text-red-600" />
             </a>
           </div>
-
         </div>
       </div>
     </section>
